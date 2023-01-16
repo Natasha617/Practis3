@@ -1,0 +1,205 @@
+<!--
+  Аргументы
+  title - главный заголовок временной ленты
+  month(1-7) - заголовки месяцев
+  year(1-7) - заголовки для годов
+  subtitle(1-7) - подзаголовки временной ленты
+  text(1-7) - текст для временной ленты
+-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Icon Blocks - Snippets | Unify - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="/vendor/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/vendor/swiper/swiper-bundle.min.css">
+
+  <!-- CSS Unify Template -->
+  <link rel="stylesheet" href="/css/theme.min.css">
+  <link rel="stylesheet" href="/css/snippets.min.css">
+  
+</head>
+
+<!-- Step Features -->
+<div class="overflow-hidden">
+  <div class="container content-space-1">
+    <div class="row align-items-md-center mb-7">
+      <div class="col-md mb-3 mb-md-0">
+        <h2>{{ .Get "title" }}</h2>
+      </div>
+      <!-- End Col -->
+
+      <div class="col-md-auto">
+        <!-- Arrows -->
+        <div class="js-swiper-timeline-button-prev swiper-button-prev swiper-static-button-prev"></div>
+        <div class="js-swiper-timeline-button-next swiper-button-next swiper-static-button-next"></div>
+      </div>
+      <!-- End Col -->
+    </div>
+    <!-- End Row -->
+
+    <!-- Swiper Slider -->
+    <div class="swiper-center-mode-end">
+      <div class="js-swiper-timeline swiper swiper-step">
+        <div class="swiper-wrapper">
+          <!-- Slide -->
+          <div class="swiper-slide">
+            <span class="h5 fw-normal text-body mb-0">{{ .Get "month1" }}</span>
+            <span class="display-5 d-block text-primary">{{ .Get "year1" }}</span>
+
+            <div class="swiper-step-divider"></div>
+
+            <h6>{{ .Get "subtitle1" }}</h6>
+            <p>{{ .Get "text1" }}</p>
+          </div>
+          <!-- End Slide -->
+
+          <!-- Slide -->
+          <div class="swiper-slide">
+            <span class="h5 fw-normal text-body mb-0">{{ .Get "month2" }}</span>
+            <span class="display-5 d-block text-primary">{{ .Get "year2" }}</span>
+
+            <div class="swiper-step-divider"></div>
+
+            <h6>{{ .Get "subtitle2" }}</h6>
+            <p>{{ .Get "text2" }}</p>
+          </div>
+          <!-- End Slide -->
+
+          <!-- Slide -->
+          <div class="swiper-slide">
+            <span class="h5 fw-normal text-body mb-0">{{ .Get "month3" }}</span>
+            <span class="display-5 d-block text-primary">{{ .Get "year3" }}</span>
+
+            <div class="swiper-step-divider"></div>
+
+            <h6>{{ .Get "subtitle3" }}</h6>
+            <p>{{ .Get "text3" }}</p>
+          </div>
+          <!-- End Slide -->
+
+          <!-- Slide -->
+          <div class="swiper-slide">
+            <span class="h5 fw-normal text-body mb-0">{{ .Get "month4" }}</span>
+            <span class="display-5 d-block text-primary">{{ .Get "year4" }}</span>
+
+            <div class="swiper-step-divider"></div>
+
+            <h6>{{ .Get "subtitle4" }}</h6>
+            <p>{{ .Get "text4" }}</p>
+          </div>
+          <!-- End Slide -->
+
+          <!-- Slide -->
+          <div class="swiper-slide">
+            <span class="h5 fw-normal text-body mb-0">{{ .Get "month5" }}</span>
+            <span class="display-5 d-block text-primary">{{ .Get "year5" }}</span>
+
+            <div class="swiper-step-divider"></div>
+
+            <h6>{{ .Get "subtitle5" }}</h6>
+            <p>{{ .Get "text5" }}</p>
+          </div>
+          <!-- End Slide -->
+
+          <!-- Slide -->
+          <div class="swiper-slide">
+            <span class="h5 fw-normal text-body mb-0">{{ .Get "month6" }}</span>
+            <span class="display-5 d-block text-primary">{{ .Get "year6" }}</span>
+
+            <div class="swiper-step-divider"></div>
+
+            <h6>{{ .Get "subtitle6" }}</h6>
+            <p>{{ .Get "text6" }}</p>
+          </div>
+          <!-- End Slide -->
+
+          <!-- Slide -->
+          <div class="swiper-slide">
+            <span class="h5 fw-normal text-body mb-0">{{ .Get "month7" }}</span>
+            <span class="display-5 d-block text-primary">{{ .Get "year7" }}</span>
+
+            <div class="swiper-step-divider"></div>
+
+            <h6>{{ .Get "subtitle7" }}</h6>
+            <p>{{ .Get "text7" }}</p>
+          </div>
+          <!-- End Slide -->
+        </div>
+
+        <!-- Preloader -->
+        <div class="js-swiper-preloader swiper-preloader">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Загрузка...</span>
+          </div>
+        </div>
+        <!-- End Preloader -->
+      </div>
+    </div>
+    <!-- End Swiper Slider -->
+  </div>
+</div>
+<!-- End Step Features -->
+
+  <!-- JS Global Compulsory  -->
+  <script src="/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="/vendor/list.js/dist/list.min.js"></script>
+  <script src="/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="/vendor/prism/prism.js"></script>
+
+  <!-- JS Unify -->
+  <script src="/js/theme.min.js"></script>
+
+  <script src="/vendor/swiper/swiper-bundle.min.js"></script>
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF SWIPER
+      // =======================================================
+      var swiper = new Swiper('.js-swiper-timeline',{
+        navigation: {
+          nextEl: '.js-swiper-timeline-button-next',
+          prevEl: '.js-swiper-timeline-button-prev',
+        },
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
+          480: {
+            slidesPerView: 2
+          },
+          768: {
+            slidesPerView: 3
+          },
+          1024: {
+            slidesPerView: 4
+          },
+        },
+        on: {
+          'afterInit': function (swiper) {
+            setTimeout(() => {
+              const preloader = swiper.el.querySelector('.js-swiper-preloader')
+              preloader.parentNode.removeChild(preloader)
+            }, 1000)
+          }
+        }
+      });
+    })()
+  </script>
+</html>

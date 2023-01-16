@@ -1,0 +1,57 @@
+<!--
+  image1 - первое изображение
+  image2 - второе изображение
+  по умолчанию папка img
+
+  также следует сначала подготовить два длинных изображения, состоящие из нескольких - именно их и будет крутить сниппет
+-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Icon Blocks - Snippets | Unify - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="/vendor/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Unify Template -->
+  <link rel="stylesheet" href="/css/theme.min.css">
+  <link rel="stylesheet" href="/css/snippets.min.css">
+</head>
+
+<!-- Sliding Image -->
+<div class="sliding-img mb-3">
+  <div class="sliding-img-frame-to-start" style="background-image: url(/img/{{ .Get "image1" }})"></div>
+</div>
+<!-- End Sliding Image -->
+
+<!-- Sliding Image -->
+<div class="sliding-img mb-3">
+  <div class="sliding-img-frame-to-start-sm" style="background-image: url(/img/{{ .Get "image2" }})"></div>
+</div>
+<!-- End Sliding Image -->
+
+  <!-- JS Global Compulsory  -->
+  <script src="/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="/vendor/list.js/dist/list.min.js"></script>
+  <script src="/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="/vendor/prism/prism.js"></script>
+
+  <!-- JS Unify -->
+  <script src="/js/theme.min.js"></script>
+  </html>

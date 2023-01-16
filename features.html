@@ -1,0 +1,81 @@
+<!--
+  Аргументы сниппета
+  image - ссылка на изображение, отображаемое слево. Полагается, что находится в папке img
+  title - Заголовок
+  maintext - текст под заголовком
+
+  item1,
+  item2,
+  item3 - тексты для пунктов
+
+  link - ссылка для кнопки
+  linktext - текст для кнопки
+-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Icon Blocks - Snippets | Unify - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="/vendor/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Unify Template -->
+  <link rel="stylesheet" href="/css/theme.min.css">
+  <link rel="stylesheet" href="/css/snippets.min.css">
+</head>
+
+<!-- Features -->
+<div class="container content-space-1">
+  <div class="row justify-content-lg-between align-items-lg-center">
+    <div class="col-lg-6 mb-5 mb-lg-0">
+      <img class="img-fluid rounded-3" src="/img/{{ .Get "image" }}" alt="Image Description">
+    </div>
+    <!-- End Col -->
+
+    <div class="col-lg-5">
+      <div class="mb-5">
+        <h2>{{ .Get "title" }}</h2>
+        <p>{{ .Get "maintext" }}</p>
+      </div>
+
+      <!-- List Checked -->
+      <ul class="list-checked list-checked-soft-bg-primary list-checked-lg mb-5">
+        <li class="list-checked-item">{{ .Get "item1" }}</li>
+        <li class="list-checked-item">{{ .Get "item2" }}</li>
+        <li class="list-checked-item">{{ .Get "item3" }}</li>
+      </ul>
+      <!-- End List Checked -->
+
+      <a class="btn btn-primary" href="{{ .Get "link" }}">{{ .Get "linktext" }}</a>
+    </div>
+    <!-- End Col -->
+  </div>
+  <!-- End Row -->
+</div>
+<!-- End Features -->
+
+  <!-- JS Global Compulsory  -->
+  <script src="/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="/vendor/list.js/dist/list.min.js"></script>
+  <script src="/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="/vendor/prism/prism.js"></script>
+
+  <!-- JS Unify -->
+  <script src="/js/theme.min.js"></script>
+  </html>
